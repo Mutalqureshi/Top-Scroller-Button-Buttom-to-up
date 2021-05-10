@@ -43,3 +43,15 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+//jquery
+
+  jQuery(window).scroll(function () {
+        if (jQuery(this).scrollTop() > 100) {
+            jQuery('.scrolltop').fadeIn();
+        } else {
+            jQuery('.scrolltop').fadeOut();
+        }
+
+    });
+   
